@@ -1,6 +1,6 @@
-import xGrapeJson from '../../artifacts/contracts/xGRAPE.sol/xGRAPE.json';
-import ZapperJson from '../../artifacts/contracts/Zapper.sol/Zapper.json';
-import LpZapperJson from '../../artifacts/contracts/LPZapper.sol/LPZapper.json';
+import xGrapeJson from '../artifacts/contracts/xGRAPE.sol/xGRAPE.json';
+import ZapperJson from '../artifacts/contracts/Zapper.sol/Zapper.json';
+import LpZapperJson from '../artifacts/contracts/LPZapper.sol/LPZapper.json';
 import { erc20ABI } from "wagmi";
 
 // use avax by default in prod and localhost by default in dev
