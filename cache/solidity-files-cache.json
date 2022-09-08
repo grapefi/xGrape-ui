@@ -1,0 +1,1066 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/msolomon/Projects/grapefi-staking/contracts/HelperContracts/BUSD.sol": {
+      "lastModificationDate": 1660307067606,
+      "contentHash": "3d98605f73d715cb4648384006022029",
+      "sourceName": "contracts/HelperContracts/BUSD.sol",
+      "solcConfig": {
+        "version": "0.8.14",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.14"
+      ],
+      "artifacts": [
+        "BEP20Token",
+        "Context",
+        "IBEP20",
+        "Ownable",
+        "SafeMath"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/HelperContracts/BUSDSwapper.sol": {
+      "lastModificationDate": 1660307067608,
+      "contentHash": "4e9732974f613945eb5b6e0fc665513f",
+      "sourceName": "contracts/HelperContracts/BUSDSwapper.sol",
+      "solcConfig": {
+        "version": "0.8.14",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IUniswapV2Router02.sol",
+        "./IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.14"
+      ],
+      "artifacts": [
+        "BUSDSwapper"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/HelperContracts/IUniswapV2Router02.sol": {
+      "lastModificationDate": 1660307067607,
+      "contentHash": "8799316b3ba247544efa43fc14b5c47c",
+      "sourceName": "contracts/HelperContracts/IUniswapV2Router02.sol",
+      "solcConfig": {
+        "version": "0.8.14",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.14"
+      ],
+      "artifacts": [
+        "IUniswapV2Factory",
+        "IUniswapV2Router01",
+        "IUniswapV2Router02"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/HelperContracts/IERC20.sol": {
+      "lastModificationDate": 1660307067605,
+      "contentHash": "e0d0f177618b4196de143570781214ff",
+      "sourceName": "contracts/HelperContracts/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.14",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.14"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/PancakeFactory.sol": {
+      "lastModificationDate": 1660307067604,
+      "contentHash": "defa321f897f867cd658e6ee9cd028b1",
+      "sourceName": "contracts/PancakeFactory.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 50
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "IERC20",
+        "IPancakeCallee",
+        "IPancakeERC20",
+        "IPancakeFactory",
+        "IPancakePair",
+        "Math",
+        "PancakeERC20",
+        "PancakeFactory",
+        "PancakePair",
+        "SafeMath",
+        "UQ112x112"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/PancakeRouter.sol": {
+      "lastModificationDate": 1660307067622,
+      "contentHash": "59fcad8fa7e9758f08473d191017a071",
+      "sourceName": "contracts/PancakeRouter.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 500
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0",
+        ">=0.6.2",
+        ">=0.6.2",
+        ">=0.5.0",
+        "=0.6.6",
+        ">=0.5.0",
+        ">=0.5.0",
+        ">=0.5.0",
+        ">=0.5.0",
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "IERC20",
+        "IPancakeFactory",
+        "IPancakePair",
+        "IPancakeRouter01",
+        "IPancakeRouter02",
+        "IWETH",
+        "PancakeLibrary",
+        "PancakeRouter",
+        "SafeMath",
+        "TransferHelper"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/WETH.sol": {
+      "lastModificationDate": 1660307067624,
+      "contentHash": "cb005019076e577fb5ed89b9c521b622",
+      "sourceName": "contracts/WETH.sol",
+      "solcConfig": {
+        "version": "0.4.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.4.18"
+      ],
+      "artifacts": [
+        "WBNB"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/IERC20.sol": {
+      "lastModificationDate": 1660336583697,
+      "contentHash": "e0d0f177618b4196de143570781214ff",
+      "sourceName": "contracts/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.14",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.14"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/xGRAPE.sol": {
+      "lastModificationDate": 1660875415971,
+      "contentHash": "cddea1ed43247017559239595c986961",
+      "sourceName": "contracts/xGRAPE.sol",
+      "solcConfig": {
+        "version": "0.8.14",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./Ownable.sol",
+        "./SafeMath.sol",
+        "./ReentrantGuard.sol"
+      ],
+      "versionPragmas": [
+        "0.8.14"
+      ],
+      "artifacts": [
+        "xGRAPE"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/Ownable.sol": {
+      "lastModificationDate": 1660336583698,
+      "contentHash": "427b86f92e3bbc42cf478ee5273656fd",
+      "sourceName": "contracts/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.14",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.14"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/SafeMath.sol": {
+      "lastModificationDate": 1660339122803,
+      "contentHash": "6ea05fed1ee292d4772dd3acf4b46a93",
+      "sourceName": "contracts/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.14",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.14"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/ReentrantGuard.sol": {
+      "lastModificationDate": 1660339229684,
+      "contentHash": "fe60aaefa4ce5568fb83ba2ec093a1cc",
+      "sourceName": "contracts/ReentrantGuard.sol",
+      "solcConfig": {
+        "version": "0.8.14",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.14"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/IUniswapV2Router02.sol": {
+      "lastModificationDate": 1660875415945,
+      "contentHash": "8799316b3ba247544efa43fc14b5c47c",
+      "sourceName": "contracts/IUniswapV2Router02.sol",
+      "solcConfig": {
+        "version": "0.8.14",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.14"
+      ],
+      "artifacts": [
+        "IUniswapV2Factory",
+        "IUniswapV2Router01",
+        "IUniswapV2Router02"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/test_contracts/Context.sol": {
+      "lastModificationDate": 1660336984482,
+      "contentHash": "c4b296fb9a98a645ca52cc72c3fbae06",
+      "sourceName": "contracts/test_contracts/Context.sol",
+      "solcConfig": {
+        "version": "0.8.14",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/test_contracts/Wine.sol": {
+      "lastModificationDate": 1660336984479,
+      "contentHash": "39144e02a1d1209aed8f4f7cf0b9cef2",
+      "sourceName": "contracts/test_contracts/Wine.sol",
+      "solcConfig": {
+        "version": "0.8.14",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./IERC20Metadata.sol",
+        "./Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Wine"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/test_contracts/IERC20.sol": {
+      "lastModificationDate": 1660336984475,
+      "contentHash": "020f718826122fba2f2c83ff2b7cb2cd",
+      "sourceName": "contracts/test_contracts/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.14",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/test_contracts/IERC20Metadata.sol": {
+      "lastModificationDate": 1660336984481,
+      "contentHash": "24f186419f9a910c0982e0ea0d379f90",
+      "sourceName": "contracts/test_contracts/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.14",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/test_contracts/MIM.sol": {
+      "lastModificationDate": 1660336984478,
+      "contentHash": "5773f3ee3dfb7a8c0e49a755de27ef98",
+      "sourceName": "contracts/test_contracts/MIM.sol",
+      "solcConfig": {
+        "version": "0.8.14",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./IERC20Metadata.sol",
+        "./Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MIM"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/test_contracts/GrapeMimLpVault.sol": {
+      "lastModificationDate": 1660341571944,
+      "contentHash": "19be6b2ba7e72b37ceafbdf17b3fd187",
+      "sourceName": "contracts/test_contracts/GrapeMimLpVault.sol",
+      "solcConfig": {
+        "version": "0.8.14",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./IERC20Metadata.sol",
+        "./Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GrapeMimLpVault"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/test_contracts/GrapeMim.sol": {
+      "lastModificationDate": 1660337372429,
+      "contentHash": "c349756e4fe2e1a4742c5b7da58c3156",
+      "sourceName": "contracts/test_contracts/GrapeMim.sol",
+      "solcConfig": {
+        "version": "0.8.14",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./IERC20Metadata.sol",
+        "./Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GrapeMim"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/test_contracts/Grape.sol": {
+      "lastModificationDate": 1660338607224,
+      "contentHash": "4c30a888b44f24bc6606d8d7703b098a",
+      "sourceName": "contracts/test_contracts/Grape.sol",
+      "solcConfig": {
+        "version": "0.8.14",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./IERC20Metadata.sol",
+        "./Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Grape"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/test_contracts/ERC20.sol": {
+      "lastModificationDate": 1660336984477,
+      "contentHash": "719bc06bd8b6e8d64db8198c1b294cc6",
+      "sourceName": "contracts/test_contracts/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.14",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./IERC20Metadata.sol",
+        "./Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/Zapper.sol": {
+      "lastModificationDate": 1660964506685,
+      "contentHash": "a4b07b6465240557558780400aa605a7",
+      "sourceName": "contracts/Zapper.sol",
+      "solcConfig": {
+        "version": "0.8.14",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./IUniswapV2Router02.sol"
+      ],
+      "versionPragmas": [
+        "0.8.14"
+      ],
+      "artifacts": [
+        "IVault",
+        "IXGrape",
+        "Zapper"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/test_contracts/JoeFactory.sol": {
+      "lastModificationDate": 1660336984489,
+      "contentHash": "3f4e153c4368101c9626e1cae2b479e7",
+      "sourceName": "contracts/test_contracts/JoeFactory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 500
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0",
+        "=0.6.12",
+        "=0.6.12",
+        "=0.6.12",
+        "=0.6.12",
+        ">=0.5.0",
+        ">=0.5.0",
+        "=0.6.12",
+        "=0.6.12"
+      ],
+      "artifacts": [
+        "IERC20Joe",
+        "IJoeCallee",
+        "IJoeFactory",
+        "IMigrator",
+        "JoeERC20",
+        "JoeFactory",
+        "JoePair",
+        "Math",
+        "SafeMathJoe",
+        "UQ112x112"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/test_contracts/JoeRouter02.sol": {
+      "lastModificationDate": 1660342036953,
+      "contentHash": "3f6fcbc2cc3ce12ac346758ebc5115f8",
+      "sourceName": "contracts/test_contracts/JoeRouter02.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 500
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0",
+        "=0.6.12",
+        ">=0.5.0",
+        ">=0.6.0",
+        ">=0.5.0",
+        ">=0.6.2",
+        ">=0.6.2",
+        ">=0.5.0",
+        ">=0.5.0",
+        "=0.6.12"
+      ],
+      "artifacts": [
+        "IERC20Joe",
+        "IJoeFactory",
+        "IJoePair",
+        "IJoeRouter01",
+        "IJoeRouter02",
+        "IWAVAX",
+        "JoeLibrary",
+        "JoeRouter02",
+        "SafeMathJoe",
+        "TransferHelper"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/test_contracts/WAVAX.sol": {
+      "lastModificationDate": 1660336984488,
+      "contentHash": "82a00258c410f71efb615b293ca52a19",
+      "sourceName": "contracts/test_contracts/WAVAX.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 50
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.6"
+      ],
+      "artifacts": [
+        "WAVAX"
+      ]
+    },
+    "/Users/msolomon/Projects/grapefi-staking/contracts/LPZapper.sol": {
+      "lastModificationDate": 1661186307721,
+      "contentHash": "acb2ce0eb836bef4c728945b2b8aa86d",
+      "sourceName": "contracts/LPZapper.sol",
+      "solcConfig": {
+        "version": "0.8.14",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.14"
+      ],
+      "artifacts": [
+        "IERC20",
+        "IUniswapV2Factory",
+        "IUniswapV2Router01",
+        "IUniswapV2Router02",
+        "IVault",
+        "IXGrape",
+        "LPZapper"
+      ]
+    }
+  }
+}

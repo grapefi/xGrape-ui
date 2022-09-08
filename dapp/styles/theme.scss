@@ -1,0 +1,33 @@
+/*  ------------------------------------------------- */
+/*  General */
+/*  ------------------------------------------------- */
+.app-bg {
+  @apply bg-gradient-radial from-brand-1 to-brand-2;
+}
+.app-container {
+  @apply max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto;
+}
+
+.font-superstar {
+  @apply font-brand text-brand-3;
+}
+
+.font-tommy {
+  @apply font-secondary;
+}
+
+.btn {
+  @apply font-chonk;
+}
+
+.btn-app {
+  @apply bg-brand-1 hover:bg-brand-1 hover:bg-opacity-75 text-white uppercase py-2 px-4 rounded-md
+}
+
+.btn-connect {
+  @apply bg-opacity-50 border-opacity-50 hover:bg-opacity-50 hover:border-opacity-50;
+}
+
+.btn-disabled {
+  @apply bg-opacity-50 hover:bg-opacity-0 cursor-not-allowed;
+}
