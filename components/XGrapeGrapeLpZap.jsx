@@ -486,8 +486,8 @@ export function XGrapeMinter () {
               onClick={() => approve?.()}
             >
               { approvalIsLoading || approvalInProgress
-                ? <LoadingSpinner text="Enabling"/>
-                : `Enable`
+                ? <LoadingSpinner text="Approving"/>
+                : `Approve`
               }
             </button>
         }
