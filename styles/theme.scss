@@ -3,6 +3,16 @@
 /*  ------------------------------------------------- */
 
 
+.hide-on-mobile {
+  display: inherit;
+}
+
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
 .back-logo3 {
   position: fixed;
   z-index: 0;
