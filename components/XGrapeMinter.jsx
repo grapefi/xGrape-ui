@@ -415,10 +415,10 @@ export function XGrapeMinter() {
         checkSufficientAllowance(allowances[1] || "0");
         setSelectedToken(GRAPE_MIM);
         break;
-      case "Grape-MIM LP Vault":
-        setWalletBalance(utils.formatEther(balances[2] || "0"));
-        setAllowanceAmount(allowances[2] || "0");
-        checkSufficientAllowance(allowances[2] || "0");
+      case 'Grape-MIM LP Magik':
+        setWalletBalance(utils.formatEther(balances[2] || '0'));
+        setAllowanceAmount(allowances[2] || '0');
+        checkSufficientAllowance(allowances[2] || '0');
         setSelectedToken(GRAPE_MIM_LP_VAULT);
         break;
       case "AVAX":
