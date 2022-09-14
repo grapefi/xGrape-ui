@@ -433,7 +433,7 @@ export function XGrapeMinter() {
       title="xGrape-Grape LP Zapper"
       subtitle="Creates LP for use in the Grape Soda Press. Grape zappable only above peg"
     >
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-5">
         <div className="tabs tabs-boxed mx-2 flex justify-center sm:mx-0">
           {zappableAssets.map((a, i) => (
             <a

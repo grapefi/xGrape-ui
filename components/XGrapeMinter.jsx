@@ -59,7 +59,7 @@ export function XGrapeMinter() {
 
   const [zappableAssets] = useState([
     "Grape-MIM LP",
-    "Grape-MIM LP Vault",
+    "Grape-MIM LP Magik",
     "AVAX",
     "MIM",
   ]);
@@ -488,7 +488,7 @@ export function XGrapeMinter() {
       title="XGrape Minter"
       subtitle="Mints xGrape for holding or use as collateral. If you want LP for the Soda Press use the LP Zapper above."
     >
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-5">
         <div className="tabs tabs-boxed mx-2 flex justify-center sm:mx-0">
           {zappableAssets.map((a, i) => (
             <a
