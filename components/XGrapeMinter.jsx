@@ -53,7 +53,7 @@ export function XGrapeMinter () {
   const zappableAssets = [
     'Grape',
     'Grape-MIM LP',
-    'Grape-MIM LP Vault',
+    'Grape-MIM LP Magik',
     'AVAX',
     'MIM'
   ];
@@ -404,7 +404,7 @@ export function XGrapeMinter () {
         checkSufficientAllowance(allowances[1] || '0');
         setSelectedToken(GRAPE_MIM);
         break;
-      case 'Grape-MIM LP Vault':
+      case 'Grape-MIM LP Magik':
         setWalletBalance(utils.formatEther(balances[2] || '0'));
         setAllowanceAmount(allowances[2] || '0');
         checkSufficientAllowance(allowances[2] || '0');
@@ -470,7 +470,7 @@ export function XGrapeMinter () {
   }, [depositAmount]);
 
   return (
-    <Card title="XGrape Minter" subtitle="Mints xGrape for holding or use as collateral. If you want LP for the Soda Press use the LP Zapper above." note="NOTE: Zapping Grape will sell 50% of it, recommended to avoid below peg!">
+    <Card title="XGrape Minter" subtitle="Mints xGrape for holding or use as collateral. If you want LP for the Soda Press & don't already have xGrape use the LP Zapper above." note="NOTE: Zapping Grape will sell 50% of it, recommended to avoid below peg!">
       <div className="flex justify-center">
       
         <div className="tabs tabs-boxed mx-2 flex justify-center sm:mx-0">
