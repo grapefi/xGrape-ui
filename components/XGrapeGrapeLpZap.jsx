@@ -14,6 +14,7 @@ import { BigNumber, constants, utils } from "ethers";
 // Context
 import NotificationContext from "../context/NotificationContext";
 import useGrapePrice from "../hooks/useGrapePrice";
+import Image from "next/image";
 
 // Constants
 import {
@@ -525,7 +526,17 @@ export function XGrapeMinter() {
             href="https://soda.grapefinance.app/"
             className="btn-app"
           >
-            Deposit into Soda Press
+            <div className="flex items-center">
+              <div>Deposit into Soda Press</div>
+              <div>
+                <Image
+                  width={30}
+                  height={30}
+                  alt="soda press"
+                  src={require("/public/img/soda.png")}
+                />
+              </div>
+            </div>
           </a>
         </div>
       </div>
