@@ -61,6 +61,21 @@ export const validChains = process.env.NODE_ENV === 'production' ? chains : chai
   }
 ]);
 
+export const GRAPEMIM = {
+  1337: {
+    address: '0xb382247667fe8ca5327ca1fa4835ae77a9907bc8',
+    abi: erc20ABI
+  },
+  43113: {
+    address: '0xb382247667fe8ca5327ca1fa4835ae77a9907bc8',
+    abi: erc20ABI
+  },
+  43114: {
+    address: '0xb382247667fe8ca5327ca1fa4835ae77a9907bc8', // Grape/MIM TJ LP token
+    abi: erc20ABI
+  }
+}
+
 export const GRAPE = {
   1337: {
     address: '0x5FbDB2315678afecb367f032d93F642f64180aa3',

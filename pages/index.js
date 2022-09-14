@@ -27,15 +27,26 @@ export default function Home() {
       <main>
         <NotificationContext.Provider value={notificationState}>
           <Notification />
-          <div style={{marginBottom: '30px'}} className="grid grid-cols-6 gap-4">
+          <div
+            style={{ marginBottom: "30px" }}
+            className="grid grid-cols-6 gap-4"
+          >
             <div
-              style={{ zIndex: 1 }}
+              style={{
+                zIndex: 1,
+                borderRadius: "6px",
+                backgroundColor: "rgba(230, 71, 230, 0.3) !important",
+              }}
               className="md:col-start-2 md:col-span-4 col-span-6 mt-10"
             >
-              <XGrapeGrapeLpZap />             
+              <XGrapeGrapeLpZap />
             </div>
             <div
-              style={{ zIndex: 1 }}
+              style={{
+                zIndex: 1,
+                borderRadius: "6px",
+                backgroundColor: "rgba(250, 91, 250, 0.6) !important",
+              }}
               className="md:col-start-2 md:col-span-4 col-span-6"
             >
               <XGrapeMinter />
