@@ -50,7 +50,6 @@ export function XGrapeMinter () {
   }, [depositAmount]);
 
   const zappableAssets = [
-    'Grape',
     'AVAX',
     'MIM'
   ];
@@ -420,7 +419,7 @@ export function XGrapeMinter () {
   }, [depositAmount]);
 
   return (
-    <Card title="xGrape-Grape LP Zapper" subtitle="Creates Grape/xGrape LP for use in the Grape Soda Press." note="NOTE: Zapping Grape will sell 25% of it, recommended to avoid under peg!">
+    <Card title="xGrape-Grape LP Zapper" subtitle="Creates Grape/xGrape LP for use in the Grape Soda Press.">
       <div className="flex justify-center">
       
         <div className="tabs tabs-boxed mx-2 flex justify-center sm:mx-0">
