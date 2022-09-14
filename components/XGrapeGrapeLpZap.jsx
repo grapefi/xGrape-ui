@@ -420,8 +420,9 @@ export function XGrapeMinter () {
   }, [depositAmount]);
 
   return (
-    <Card title="XGrape-Grape LP Zapper">
+    <Card title="xGrape-Grape LP Zapper" subtitle="Creates LP for use in the Grape Soda Press." note="NOTE: Zapping Grape will sell 25% of it, recommended to avoid under peg!">
       <div className="flex justify-center">
+      
         <div className="tabs tabs-boxed mx-2 flex justify-center sm:mx-0">
           {
             zappableAssets.map((a, i) => (
@@ -492,6 +493,19 @@ export function XGrapeMinter () {
             </button>
         }
       </div>
+      <div className="flex justify-center pb-4 pt-5">
+        <div className="flex">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://soda.grapefinance.app/"
+              className="btn-app"
+            >
+              Deposit into Soda Press
+            </a>
+          </div>
+          
+        </div>
     </Card>
   )
 }

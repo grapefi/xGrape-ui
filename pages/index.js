@@ -32,13 +32,13 @@ export default function Home() {
               style={{ zIndex: 1 }}
               className="md:col-start-2 md:col-span-4 col-span-6 mt-10"
             >
-              <XGrapeMinter />
+              <XGrapeGrapeLpZap />             
             </div>
             <div
               style={{ zIndex: 1 }}
               className="md:col-start-2 md:col-span-4 col-span-6"
             >
-              <XGrapeGrapeLpZap />
+              <XGrapeMinter />
             </div>
           </div>
         </NotificationContext.Provider>
