@@ -39,7 +39,7 @@ export function XGrapeMinter() {
   const [depositAmount, setDepositAmount] = useState("");
   const [allowanceAmount, setAllowanceAmount] = useState("0");
   const [hasSufficientAllowance, setHasSufficientAllowance] = useState(true);
-  const [asset, setAsset] = useState("Grape");
+  const [asset, setAsset] = useState("MIM");
   const [walletBalance, setWalletBalance] = useState(0);
   const [selectedToken, setSelectedToken] = useState(GRAPE);
 
