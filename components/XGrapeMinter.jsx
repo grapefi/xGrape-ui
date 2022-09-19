@@ -30,6 +30,9 @@ import XGrapeSeller from "./XGrapeSeller";
 // Hooks
 import { useEffect } from "react";
 import useGrapePrice from "../hooks/useGrapePrice";
+import useCalculatePrice from "../hooks/useCalculatePrice";
+import useGetPricePerFullShare from "../hooks/useGetPricePerFullShare";
+import useGrapeMIMPrice from "../hooks/useGrapeMIMPrice";
 
 export function XGrapeMinter() {
   const { popNotification } = useContext(NotificationContext);
@@ -56,6 +59,10 @@ export function XGrapeMinter() {
   const depositAmountWei = useMemo(() => {
     return utils.parseEther(depositAmount?.toString() || "0");
   }, [depositAmount]);
+
+  const xGrapeToMagikLP = useCalculatePrice();
+  const magikLpToGrapeMIM = useGetPricePerFullShare();
+  const grapeMIMPrice = useGrapeMIMPrice();
 
   const [zappableAssets] = useState([
     "Grape-MIM LP SW",
@@ -512,7 +519,10 @@ export function XGrapeMinter() {
         <div className="stat">
           <div className="stat-title">XGrape balance</div>
           <div className="stat-value">
-            <CountUp end={walletBalanceXgrape} decimals={2} separator="," />
+          <CountUp end={walletBalanceXgrape} decimals={2} separator="," />
+          <span style={{fontSize: '1.4rem', marginLeft: '10px'}}>
+          <CountUp end={walletBalanceXgrape * (xGrapeToMagikLP * magikLpToGrapeMIM * grapeMIMPrice)} decimals={2} separator="," prefix="~$" />
+          </span>
           </div>
           {/* <div className="stat-desc">$300.40</div> */}
         </div>
