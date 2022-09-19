@@ -58,7 +58,7 @@ export function XGrapeMinter() {
   }, [depositAmount]);
 
   const [zappableAssets] = useState([
-    "Grape-MIM LP",
+    "Grape-MIM LP SW",
     "Grape-MIM LP Magik",
     "AVAX",
     "MIM",
@@ -409,7 +409,7 @@ export function XGrapeMinter() {
         checkSufficientAllowance(allowances[0] || "0");
         setSelectedToken(GRAPE);
         break;
-      case "Grape-MIM LP":
+      case "Grape-MIM LP SW":
         setWalletBalance(utils.formatEther(balances[1] || "0"));
         setAllowanceAmount(allowances[1] || "0");
         checkSufficientAllowance(allowances[1] || "0");

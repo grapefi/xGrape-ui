@@ -12,7 +12,7 @@ export function XGrapeRatios() {
   const [seeMoreData, setSeeMoreData] = useState(false);
 
   return (
-    <div className="" style={{ color: "white" }}>
+    <div style={{ color: "white" }}>
       <div style={{ padding: "10px" }}>
         {grapeMIMPrice && (
           <div>
