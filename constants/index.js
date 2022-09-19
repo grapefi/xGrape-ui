@@ -1,6 +1,7 @@
 import xGrapeJson from '../artifacts/contracts/xGRAPE.sol/xGRAPE.json';
 import ZapperJson from '../artifacts/contracts/Zapper.sol/Zapper.json';
 import LpZapperJson from '../artifacts/contracts/LPZapper.sol/LPZapper.json';
+import GrapeMIMLPJson from '../artifacts/contracts/GrapeMIMLP.sol/GrapeMIMLP.json';
 import { erc20ABI } from "wagmi";
 
 // use avax by default in prod and localhost by default in dev
@@ -118,6 +119,21 @@ export const GRAPE_MIM_LP_VAULT = {
   43114: {
     address: '0x0dA1DC567D81925cFf22Df74C6b9e294E9E1c3A5',
     abi: erc20ABI
+  }
+}
+
+export const GRAPE_MIM_SW_MAGIK = {
+  1337: {
+    address: '0x610178dA211FEF7D417bC0e6FeD39F05609AD788',
+    abi: GrapeMIMLPJson.abi,
+  },
+  43113: {
+    address: '0xbbbb1Aa7f3F7cF7eb799E28ea43a169cd6D0cF0B',
+    abi: GrapeMIMLPJson.abi,
+  },
+  43114: {
+    address: '0x0da1dc567d81925cff22df74c6b9e294e9e1c3a5',
+    abi: GrapeMIMLPJson.abi
   }
 }
 

@@ -577,7 +577,7 @@ export function XGrapeMinter() {
             href="https://www.swapsicle.io/add/0x5541D83EFaD1f281571B343977648B75d95cdAC2/0x95CED7c63eA990588F3fd01cdDe25247D04b8D98"
             className="btn-app"
           >
-            Manually add xGrape to LP
+            xGrape-Grape LP
           </a>
         </div>
         <div className="flex pl-4">

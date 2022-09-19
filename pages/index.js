@@ -3,6 +3,8 @@ import Head from "next/head";
 import Notification from "../components/utils/Notification.jsx";
 import XGrapeMinter from "../components/XGrapeMinter.jsx";
 import XGrapeGrapeLpZap from "../components/XGrapeGrapeLpZap.jsx";
+import XGrapeRatios from "../components/XGrapeRatios.jsx";
+
 // Context
 import NotificationContext from "../context/NotificationContext";
 // Hooks
@@ -38,6 +40,16 @@ export default function Home() {
                 backgroundColor: "rgba(230, 71, 230, 0.3) !important",
               }}
               className="md:col-start-2 md:col-span-4 col-span-6 mt-10"
+            >
+              <XGrapeRatios />
+            </div>
+            <div
+              style={{
+                zIndex: 1,
+                borderRadius: "6px",
+                backgroundColor: "rgba(230, 71, 230, 0.3) !important",
+              }}
+              className="md:col-start-2 md:col-span-4 col-span-6"
             >
               <XGrapeGrapeLpZap />
             </div>
