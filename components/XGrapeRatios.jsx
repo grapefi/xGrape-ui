@@ -1,4 +1,5 @@
 // Hooks
+import useXGrapePrice from "../hooks/useXGrapePrice";
 import useCalculatePrice from "../hooks/useCalculatePrice";
 import useGetPricePerFullShare from "../hooks/useGetPricePerFullShare";
 import useGrapeMIMPrice from "../hooks/useGrapeMIMPrice";
@@ -8,7 +9,7 @@ export function XGrapeRatios() {
   const xGrapeToMagikLP = useCalculatePrice();
   const magikLpToGrapeMIM = useGetPricePerFullShare();
   const grapeMIMPrice = useGrapeMIMPrice();
-
+  const xGrapePrice = useXGrapePrice()
   const [seeMoreData, setSeeMoreData] = useState(false);
 
   return (
@@ -16,7 +17,7 @@ export function XGrapeRatios() {
       <div style={{ padding: "10px" }}>
         {grapeMIMPrice && (
           <div>
-            1 xGrape = ${(xGrapeToMagikLP * magikLpToGrapeMIM * grapeMIMPrice).toFixed(3)}
+            1 xGrape = ${xGrapePrice}
             <button className="btn-app" style={{marginLeft: '20px', cursor: 'pointer', fontSize: '0.6rem'}} onClick={() => setSeeMoreData(!seeMoreData)}>
              More Details
             </button>

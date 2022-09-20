@@ -3,6 +3,9 @@ import ZapperJson from '../artifacts/contracts/Zapper.sol/Zapper.json';
 import LpZapperJson from '../artifacts/contracts/LPZapper.sol/LPZapper.json';
 import GrapeMIMLPJson from '../artifacts/contracts/GrapeMIMLP.sol/GrapeMIMLP.json';
 import { erc20ABI } from "wagmi";
+import xGrapeOracleJson from '../artifacts/contracts/xGrapeOracle.sol/xGrapeOracle.json';
+
+const xGrapeOracleAbi = xGrapeOracleJson.abi;
 
 // use avax by default in prod and localhost by default in dev
 export const defaultChain = process.env.NODE_ENV === 'production' ? 43_114 : 1337
@@ -74,6 +77,21 @@ export const GRAPEMIM = {
   43114: {
     address: '0xb382247667fe8ca5327ca1fa4835ae77a9907bc8', // Grape/MIM TJ LP token
     abi: erc20ABI
+  }
+}
+
+export const XGRAPEORACLE = {
+  1337: {
+    address: '0x7801dc126F56ffeFbc7947B7d21ce8358265a886',
+    abi: xGrapeOracleAbi,
+  },
+  43113: {
+    address: '0x7801dc126F56ffeFbc7947B7d21ce8358265a886',
+    abi: xGrapeOracleAbi,
+  },
+  43114: {
+    address: '0x7801dc126F56ffeFbc7947B7d21ce8358265a886',
+    abi: xGrapeOracleAbi,
   }
 }
 
