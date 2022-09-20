@@ -2,19 +2,19 @@ import { useEffect, useState } from "react";
 import { useNetwork, useContractRead } from "wagmi";
 
 // constants
-import { XGRAPE } from "../constants";
+import { XGRAPEORACLE } from "../constants";
 
 export const useCalculatePrice = () => {
   const [price, setPrice] = useState();
   const { chain } = useNetwork();
   
-  const XGrapeContract = {
-    addressOrName: XGRAPE[chain?.id]?.address,
-    contractInterface: XGRAPE[chain?.id]?.abi,
+  const xGrapeOracleContract = {
+    addressOrName: XGRAPEORACLE[chain?.id]?.address,
+    contractInterface: XGRAPEORACLE[chain?.id]?.abi,
   };
 
   const { data: calculatedPrice } = useContractRead({
-    ...XGrapeContract,
+    ...xGrapeOracleContract,
     functionName: "calculatePrice",
   });
 

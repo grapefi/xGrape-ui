@@ -2,19 +2,20 @@ import { useEffect, useState } from "react";
 import { useNetwork, useContractRead } from "wagmi";
 
 // constants
-import { GRAPE_MIM_SW_MAGIK } from "../constants";
+import { XGRAPEORACLE } from "../constants";
 
 export const useGetPricePerFullShare = () => {
   const [price, setPrice] = useState();
   const { chain } = useNetwork();
   
-  const GrapeMIMContract = {
-    addressOrName: GRAPE_MIM_SW_MAGIK[chain?.id]?.address,
-    contractInterface: GRAPE_MIM_SW_MAGIK[chain?.id]?.abi,
+  
+  const xGrapeOracleContract = {
+    addressOrName: XGRAPEORACLE[chain?.id]?.address,
+    contractInterface: XGRAPEORACLE[chain?.id]?.abi,
   };
 
   const { data: pricePerFullShare } = useContractRead({
-    ...GrapeMIMContract,
+    ...xGrapeOracleContract,
     functionName: "getPricePerFullShare",
   });
 
