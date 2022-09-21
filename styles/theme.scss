@@ -13,30 +13,15 @@
   }
 }
 
-.back-logo3 {
+.background-blur {
   position: fixed;
   z-index: 0;
-  opacity: 0.3;
-  filter: blur(40px);
-  -webkit-filter: blur(40);
-  transform: scale(2);
   width: 100%;
-  left: 30%;
+  height: 100%;
+  opacity: 0.6;
+  left: 0%;
   right: 0%;
-  top: 10%;
-  max-width: 1920px;
-}
-
-.back-glow-2 {
-  position: fixed;
-  z-index: 0;
-  filter: blur(200px);
-  -webkit-filter: blur(200px);
-  width: 60%;
-  opacity: 0.3;
-  left: 50%;
-  top: 0;
-  transform: translateZ(-10px) scale(2);
+  max-width: 100%;
 }
 
 .app-container {
