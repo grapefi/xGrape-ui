@@ -24,6 +24,11 @@
   max-width: 100%;
 }
 
+.fixed-image {
+  position: fixed !important;
+}
+
+
 .app-container {
   @apply max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto;
 }
