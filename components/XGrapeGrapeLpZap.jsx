@@ -9,6 +9,9 @@ import {
   useNetwork,
 } from "wagmi";
 import CountUp from "react-countup";
+import Tooltip from "@mui/material/Tooltip";
+
+import InfoIcon from "@mui/icons-material/Info";
 import { ExternalLink } from "react-feather";
 import { BigNumber, constants, utils } from "ethers";
 // Context
@@ -432,7 +435,7 @@ export function XGrapeMinter() {
   return (
     <Card
       title="xGrape-Grape LP Zapper"
-      subtitle="Creates LP for use in the Grape Soda Press. Grape zappable only above peg"
+      subtitle="Creates LP for use in the Grape Soda Press. Grape zappable only above peg."
     >
       <div className="flex justify-center mt-5">
         <div className="tabs tabs-boxed mx-2 flex justify-center sm:mx-0">
@@ -505,7 +508,7 @@ export function XGrapeMinter() {
             {zapIsLoading || zapWithAvaxIsLoading || zapInProgress ? (
               <LoadingSpinner text="Zapping LP" />
             ) : (
-              `Zap LP`
+              <span>Zap LP</span>
             )}
           </button>
         ) : (
@@ -518,6 +521,7 @@ export function XGrapeMinter() {
           </button>
         )}
       </div>
+      <div className="flex justify-center text-xs">When Zapping, expect a bit of slippage. The excess of xGrape is sent back to your wallet.</div>
       <div className="flex justify-center pb-4 pt-5">
         <div className="flex">
           <a
