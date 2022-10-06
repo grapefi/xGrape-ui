@@ -209,7 +209,7 @@ export const GRAPE_XGRAPE_LP = {
 
 export const LP_ZAPPER = {
   43114: {
-    address: '0x493A7099C1b7Ca8A4f1Cd3748A09EAe06fbD5b67',
+    address: '0x7AaEe8897E9dA50Fdb6E765E16DDFFBC8bb359F5',
     abi: LpZapperJson.abi
   }
 }
