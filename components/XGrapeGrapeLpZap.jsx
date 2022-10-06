@@ -521,7 +521,7 @@ export function XGrapeMinter() {
           </button>
         )}
       </div>
-      <div className="flex justify-center text-xs">When Zapping, expect a bit of slippage. The excess of xGrape is sent back to your wallet.</div>
+      <div className="flex justify-center text-xs">When Zapping, expect a bit of slippage (1-2%). The excess of xGrape is sent back to your wallet.</div>
       <div className="flex justify-center pb-4 pt-5">
         <div className="flex">
           <a
