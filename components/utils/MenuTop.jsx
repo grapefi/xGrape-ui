@@ -20,7 +20,7 @@ export default function MenuTop() {
         <div className="flex-1">
           <a href="https://grapefinance.app">
             <Image
-              src={matches ? "/img/logo-horizontal.png" : "/img/grape.png"}
+              src={matches ? "/img/logo-horizontal.png" : "/img/logo-icon.png"}
               alt="Logo"
               width={matches ? 310 : 50}
               height={45}
