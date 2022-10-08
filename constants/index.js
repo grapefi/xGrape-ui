@@ -195,7 +195,7 @@ export const ZAPPER = {
     abi: ZapperJson.abi
   },
   43114: {
-    address: '0xe8f699B68ddE8e59DBe8fdF20955931B25fe7dFa',
+    address: '0x576A1ddbAC921C092a839095d02a8717fFa5aF8D',
     abi: ZapperJson.abi
   }
 }
