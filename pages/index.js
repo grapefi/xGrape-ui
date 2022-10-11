@@ -51,7 +51,7 @@ export default function Home() {
               }}
               className="md:col-start-2 md:col-span-4 col-span-6"
             >
-              <XGrapeGrapeLpZap />
+              <XGrapeMinter />
             </div>
             <div
               style={{
@@ -61,7 +61,7 @@ export default function Home() {
               }}
               className="md:col-start-2 md:col-span-4 col-span-6"
             >
-              <XGrapeMinter />
+              <XGrapeGrapeLpZap />
             </div>
           </div>
         </NotificationContext.Provider>

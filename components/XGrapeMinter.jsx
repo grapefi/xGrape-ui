@@ -18,6 +18,7 @@ import {
   GRAPE,
   GRAPE_MIM,
   GRAPE_MIM_LP_VAULT,
+  PRICEORACLE,
   MIM,
   XGRAPE,
   ZAPPER,
@@ -33,6 +34,8 @@ import useGrapePrice from "../hooks/useGrapePrice";
 import useCalculatePrice from "../hooks/useCalculatePrice";
 import useGetPricePerFullShare from "../hooks/useGetPricePerFullShare";
 import useGrapeMIMPrice from "../hooks/useGrapeMIMPrice";
+import useXGrapePrice from "../hooks/useXGrapePrice";
+import useMimPrice from "../hooks/useMIMPrice";
 
 export function XGrapeMinter() {
   const { popNotification } = useContext(NotificationContext);
@@ -63,6 +66,8 @@ export function XGrapeMinter() {
   const xGrapeToMagikLP = useCalculatePrice();
   const magikLpToGrapeMIM = useGetPricePerFullShare();
   const grapeMIMPrice = useGrapeMIMPrice();
+  const xGrapePrice = useXGrapePrice();
+  const mimPrice = useMimPrice();
 
   const [zappableAssets] = useState([
     "Grape-MIM LP SW",
@@ -422,10 +427,10 @@ export function XGrapeMinter() {
         checkSufficientAllowance(allowances[1] || "0");
         setSelectedToken(GRAPE_MIM);
         break;
-      case 'Grape-MIM LP Magik':
-        setWalletBalance(utils.formatEther(balances[2] || '0'));
-        setAllowanceAmount(allowances[2] || '0');
-        checkSufficientAllowance(allowances[2] || '0');
+      case "Grape-MIM LP Magik":
+        setWalletBalance(utils.formatEther(balances[2] || "0"));
+        setAllowanceAmount(allowances[2] || "0");
+        checkSufficientAllowance(allowances[2] || "0");
         setSelectedToken(GRAPE_MIM_LP_VAULT);
         break;
       case "AVAX":
@@ -490,6 +495,20 @@ export function XGrapeMinter() {
     checkSufficientAllowance(allowanceAmount);
   }, [depositAmount]);
 
+  const get30xGrapePrice = () => {
+    const priceOf30xGrape = Math.ceil(30 * mimPrice * xGrapePrice);
+    let price = 0;
+    if (asset === "Grape-MIM LP SW") {
+      price = Math.ceil(priceOf30xGrape / grapeMIMPrice);
+    } else if (asset === "Grape-MIM LP Magik") {
+      price = Math.ceil(priceOf30xGrape / magikLpToGrapeMIM);
+    } else if (asset === "AVAX") {
+      price = Math.ceil(priceOf30xGrape / 16.2);
+    } else if (asset === "MIM") {
+      price = Math.ceil(priceOf30xGrape);
+    }
+    return price;
+  };
   return (
     <Card
       title="XGrape Minter"
@@ -519,13 +538,25 @@ export function XGrapeMinter() {
         <div className="stat">
           <div className="stat-title">XGrape balance</div>
           <div className="stat-value">
-          <CountUp end={walletBalanceXgrape} decimals={2} separator="," />
-          <span style={{fontSize: '1.4rem', marginLeft: '10px'}}>
-          <CountUp end={walletBalanceXgrape * (xGrapeToMagikLP * magikLpToGrapeMIM * grapeMIMPrice)} decimals={2} separator="," prefix="~$" />
-          </span>
+            <CountUp end={walletBalanceXgrape} decimals={2} separator="," />
+            <span style={{ fontSize: "1.4rem", marginLeft: "10px" }}>
+              <CountUp
+                end={
+                  walletBalanceXgrape *
+                  (xGrapeToMagikLP * magikLpToGrapeMIM * grapeMIMPrice)
+                }
+                decimals={2}
+                separator=","
+                prefix="~$"
+              />
+            </span>
           </div>
           {/* <div className="stat-desc">$300.40</div> */}
         </div>
+      </div>
+      <div className="grid grid-flow-col sm:grid-cols-1 gap-2 mx-6">
+        30 xGrape = ~{get30xGrapePrice()} {asset}. Consider adding a bit more
+        for slippage and zap fees.
       </div>
       <div className="grid grid-flow-col sm:grid-cols-2 gap-2 mx-6 pb-4">
         <div className="relative rounded-md shadow-sm">

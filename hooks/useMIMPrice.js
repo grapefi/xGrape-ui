@@ -5,7 +5,7 @@ import { getDefaultProvider } from "ethers";
 // constants
 import { PRICEORACLE } from "../constants";
 
-export const useGrapeMIMPrice = () => {
+export const useMIMPrice = () => {
   const { chain } = useNetwork();
   const provider = getDefaultProvider();
   const [wineMIMLPPrice, setWineMIMLPPrice] = useState();
@@ -15,22 +15,23 @@ export const useGrapeMIMPrice = () => {
     contractInterface: PRICEORACLE[chain?.id]?.abi,
   };
 
-  const { data: grapeMIMLPPrice } = useContractRead({
+  const { data: MIMPrice } = useContractRead({
     ...priceOracleContract,
-    functionName: "grapeSwLPVal",
+    functionName: "latestMimPriceFormatted",
   });
 
   useEffect(() => {
     async function retrievePrice() {
-      const price = Number(grapeMIMLPPrice) / Math.pow(10, 18);
+      const price = Number(MIMPrice) / Math.pow(10, 18);
+      console.log("MIM Price = " + price);
       setWineMIMLPPrice(price.toFixed(3));
     }
-    if (chain && provider && grapeMIMLPPrice) {
+    if (chain && provider && MIMPrice) {
       retrievePrice();
     }
-  }, [chain, provider, grapeMIMLPPrice]);
+  }, [chain, provider, MIMPrice]);
 
   return wineMIMLPPrice;
 };
 
-export default useGrapeMIMPrice;
+export default useMIMPrice;
