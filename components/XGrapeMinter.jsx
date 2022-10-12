@@ -507,7 +507,7 @@ export function XGrapeMinter() {
     } else if (asset === "MIM") {
       price = Math.ceil(priceOf30xGrape);
     }
-    return price;
+    return price + (price * 0.05);
   };
   return (
     <Card
