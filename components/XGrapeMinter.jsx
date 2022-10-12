@@ -512,7 +512,7 @@ export function XGrapeMinter() {
   return (
     <Card
       title="XGrape Minter"
-      subtitle="Mints xGrape for holding or use as collateral in Vinium only. If you want LP for the Grape Soda Press use the LP Zapper above."
+      subtitle="Mints xGrape for holding or use as collateral in Vinium only. If you want LP for the Grape Soda Press use the LP Zapper below."
     >
       <div className="flex justify-center mt-5">
         <div className="tabs tabs-boxed mx-2 flex justify-center sm:mx-0">
