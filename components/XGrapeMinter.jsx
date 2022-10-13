@@ -554,10 +554,10 @@ export function XGrapeMinter() {
           {/* <div className="stat-desc">$300.40</div> */}
         </div>
       </div>
-      <div className="grid grid-flow-col sm:grid-cols-1 gap-2 mx-6">
+      {/* <div className="grid grid-flow-col sm:grid-cols-1 gap-2 mx-6">
         30 xGrape = ~{get30xGrapePrice()} {asset}. Consider adding a bit more
         for slippage and zap fees.
-      </div>
+      </div> */}
       <div className="grid grid-flow-col sm:grid-cols-2 gap-2 mx-6 pb-4">
         <div className="relative rounded-md shadow-sm">
           <input
