@@ -521,14 +521,28 @@ export function XGrapeMinter() {
           </button>
         )}
       </div>
-      <div className="flex justify-center text-xs">When Zapping, expect a bit of slippage (1-2%). The excess of xGrape is sent back to your wallet.</div>
+      <div className="flex justify-center text-xs">
+        When Zapping, expect a bit of slippage (1-2%). The excess of xGrape is
+        sent back to your wallet.
+      </div>
       <div className="flex justify-center pb-4 pt-5">
         <div className="flex">
           <a
             rel="noreferrer"
             target="_blank"
+            href="https://www.swapsicle.io/add/0x5541D83EFaD1f281571B343977648B75d95cdAC2/0x95CED7c63eA990588F3fd01cdDe25247D04b8D98"
+            className="btn-app ml-5"
+          >
+            <div className="flex items-center" style={{lineHeight: '35px', verticalAlign: 'middle'}}>
+              <div>xGrape-Grape LP on Swapsicle</div>
+            </div>
+          </a>
+
+          <a
+            rel="noreferrer"
+            target="_blank"
             href="https://soda.grapefinance.app/"
-            className="btn-app"
+            className="btn-app ml-5"
           >
             <div className="flex items-center">
               <div>Deposit into Soda Press</div>

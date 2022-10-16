@@ -10,6 +10,7 @@ import NotificationContext from "../context/NotificationContext";
 // Hooks
 import useNotification from "../hooks/useNotification";
 import BackgroundGlows from "./BackgroundGlows";
+import XGrapeSeller from "../components/XGrapeSeller.jsx";
 
 export default function Home() {
   const notification = useNotification();
@@ -43,6 +44,7 @@ export default function Home() {
             >
               <XGrapeRatios />
             </div>
+
             <div
               style={{
                 zIndex: 1,
@@ -53,6 +55,18 @@ export default function Home() {
             >
               <XGrapeMinter />
             </div>
+
+            <div
+              style={{
+                zIndex: 1,
+                borderRadius: "6px",
+                backgroundColor: "rgba(230, 71, 230, 0.3) !important",
+              }}
+              className="md:col-start-2 md:col-span-4 col-span-6"
+            >
+              <XGrapeSeller />
+            </div>
+
             <div
               style={{
                 zIndex: 1,

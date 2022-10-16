@@ -23,7 +23,6 @@ export const useMIMPrice = () => {
   useEffect(() => {
     async function retrievePrice() {
       const price = Number(MIMPrice) / Math.pow(10, 18);
-      console.log("MIM Price = " + price);
       setWineMIMLPPrice(price.toFixed(3));
     }
     if (chain && provider && MIMPrice) {

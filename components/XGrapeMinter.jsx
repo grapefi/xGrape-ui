@@ -512,7 +512,7 @@ export function XGrapeMinter() {
   return (
     <Card
       title="XGrape Minter"
-      subtitle="Mints xGrape for holding or use as collateral in Vinium only. If you want LP for the Grape Soda Press use the LP Zapper below."
+      subtitle="Mint xGrape for holding or use as collateral in Vinium only. If you want LP for the Grape Soda Press use the LP Zapper below."
     >
       <div className="flex justify-center mt-5">
         <div className="tabs tabs-boxed mx-2 flex justify-center sm:mx-0">
@@ -609,18 +609,9 @@ export function XGrapeMinter() {
           </button>
         )}
       </div>
-      <XGrapeSeller />
+      {/* <XGrapeSeller /> */}
       <div className="flex justify-center pb-4 pt-5">
-        <div className="flex">
-          <a
-            rel="noreferrer"
-            target="_blank"
-            href="https://www.swapsicle.io/add/0x5541D83EFaD1f281571B343977648B75d95cdAC2/0x95CED7c63eA990588F3fd01cdDe25247D04b8D98"
-            className="btn-app"
-          >
-            xGrape-Grape LP
-          </a>
-        </div>
+       
         <div className="flex pl-4">
           <a
             rel="noreferrer"

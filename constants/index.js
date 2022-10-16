@@ -1,6 +1,7 @@
 import xGrapeJson from '../artifacts/contracts/xGRAPE.sol/xGRAPE.json';
 import priceOracleJson from '../artifacts/contracts/priceOracle.sol/priceOracle.json';
 import ZapperJson from '../artifacts/contracts/Zapper.sol/Zapper.json';
+import UnzapperJson from '../artifacts/contracts/Unzapper.sol/Unzapper.json';
 import LpZapperJson from '../artifacts/contracts/LPZapper.sol/LPZapper.json';
 import GrapeMIMLPJson from '../artifacts/contracts/GrapeMIMLP.sol/GrapeMIMLP.json';
 import { erc20ABI } from "wagmi";
@@ -8,6 +9,7 @@ import xGrapeOracleJson from '../artifacts/contracts/xGrapeOracle.sol/xGrapeOrac
 
 const xGrapeOracleAbi = xGrapeOracleJson.abi;
 const priceOracleAbi = priceOracleJson.abi;
+const unzapperAbi = UnzapperJson.abi;
 
 // use avax by default in prod and localhost by default in dev
 export const defaultChain = process.env.NODE_ENV === 'production' ? 43_114 : 1337
@@ -66,6 +68,21 @@ export const validChains = process.env.NODE_ENV === 'production' ? chains : chai
     testnet: true
   }
 ]);
+
+export const AVAX = {
+  1337: {
+    address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+    abi: erc20ABI
+  },
+  43113: {
+    address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+    abi: erc20ABI
+  },
+  43114: {
+    address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7', 
+    abi: erc20ABI
+  }
+}
 
 export const GRAPEMIM = {
   1337: {
@@ -214,6 +231,21 @@ export const ZAPPER = {
   43114: {
     address: '0x576A1ddbAC921C092a839095d02a8717fFa5aF8D',
     abi: ZapperJson.abi
+  }
+}
+
+export const UNZAPPER = {
+  1337: {
+    address: '0x67fD05546ABf9AE1A05606492a15b2b7d5f4D545',
+    abi: unzapperAbi,
+  },
+  43113: {
+    address: '0x67fD05546ABf9AE1A05606492a15b2b7d5f4D545',
+    abi: unzapperAbi
+  },
+  43114: {
+    address: '0x67fD05546ABf9AE1A05606492a15b2b7d5f4D545',
+    abi: unzapperAbi
   }
 }
 
