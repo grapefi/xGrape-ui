@@ -92,7 +92,10 @@ export function XGrapeSeller() {
   };
 
   const maxDeposit = () => {
-    setDepositAmount(utils.formatEther(xGrapeBalance || "0"));
+    const value = utils.formatEther(xGrapeBalance || "0")
+    setDepositAmount(value);
+    const amountBack = calculateAmountBack(value);
+    setAmountBack(amountBack);
   };
 
   const getSelectedAssetAddress = () => {
