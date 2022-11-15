@@ -71,7 +71,7 @@ export function XGrapeMinter() {
 
   const [zappableAssets] = useState([
     "Grape-MIM LP SW",
-    "Grape-MIM LP Magik",
+    "Grape-MIM LP Magik (SW)",
     "AVAX",
     "MIM",
   ]);
@@ -427,7 +427,7 @@ export function XGrapeMinter() {
         checkSufficientAllowance(allowances[1] || "0");
         setSelectedToken(GRAPE_MIM);
         break;
-      case "Grape-MIM LP Magik":
+      case "Grape-MIM LP Magik (SW)":
         setWalletBalance(utils.formatEther(balances[2] || "0"));
         setAllowanceAmount(allowances[2] || "0");
         checkSufficientAllowance(allowances[2] || "0");
@@ -500,7 +500,7 @@ export function XGrapeMinter() {
     let price = 0;
     if (asset === "Grape-MIM LP SW") {
       price = Math.ceil(priceOf30xGrape / grapeMIMPrice);
-    } else if (asset === "Grape-MIM LP Magik") {
+    } else if (asset === "Grape-MIM LP Magik (SW)") {
       price = Math.ceil(priceOf30xGrape / magikLpToGrapeMIM);
     } else if (asset === "AVAX") {
       price = Math.ceil(priceOf30xGrape / 16.2);
